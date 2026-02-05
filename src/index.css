@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Savèkari Design System - Natural Shea Butter Brand */
+
+@layer base {
+  :root {
+    /* Premium Savèkari Palette */
+    /* Karité Cream - #F6E8D5 - Main background */
+    --background: 36 60% 90%;
+    --foreground: 22 48% 22%;
+
+    /* Cards - Warm White Soft #FFFDF9 */
+    --card: 45 100% 99%;
+    --card-foreground: 22 48% 22%;
+
+    --popover: 45 100% 99%;
+    --popover-foreground: 22 48% 22%;
+
+    /* Primary - Green Botanique #2F7D32 */
+    --primary: 122 45% 34%;
+    --primary-foreground: 45 100% 99%;
+
+    /* Secondary - Karité Cream lighter */
+    --secondary: 36 50% 93%;
+    --secondary-foreground: 22 48% 28%;
+
+    /* Muted - Soft Beige */
+    --muted: 36 35% 88%;
+    --muted-foreground: 22 20% 50%;
+
+    /* Accent - Gold Naturel #C9A24D */
+    --accent: 42 53% 54%;
+    --accent-foreground: 22 48% 15%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 45 100% 99%;
+
+    --border: 36 35% 82%;
+    --input: 36 35% 82%;
+    --ring: 122 45% 34%;
+
+    --radius: 0.75rem;
+
+    /* Custom Savèkari Premium Tokens */
+    --karite: 36 60% 90%;
+    --karite-light: 36 50% 95%;
+    --earth: 22 48% 22%;
+    --earth-light: 22 35% 42%;
+    --brown: 22 55% 32%;
+    --leaf: 122 45% 34%;
+    --leaf-light: 122 38% 45%;
+    --gold: 42 53% 54%;
+    --gold-light: 42 60% 68%;
+    --cream: 45 100% 99%;
+    
+    /* Premium Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(36 60% 90%) 0%, hsl(36 50% 95%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(45 100% 99%) 0%, hsl(36 50% 96%) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(122 45% 34%) 0%, hsl(122 38% 45%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(42 53% 54%) 0%, hsl(42 60% 45%) 100%);
+    --gradient-premium: linear-gradient(135deg, hsl(22 48% 22%) 0%, hsl(22 55% 32%) 100%);
+    
+    /* Premium Shadows */
+    --shadow-soft: 0 4px 20px -4px hsl(22 48% 22% / 0.06);
+    --shadow-card: 0 8px 30px -8px hsl(22 48% 22% / 0.1);
+    --shadow-hover: 0 16px 40px -10px hsl(22 48% 22% / 0.15);
+    --shadow-premium: 0 20px 50px -15px hsl(22 48% 22% / 0.2);
+
+    --sidebar-background: 45 100% 99%;
+    --sidebar-foreground: 22 48% 22%;
+    --sidebar-primary: 122 45% 34%;
+    --sidebar-primary-foreground: 45 100% 99%;
+    --sidebar-accent: 36 50% 93%;
+    --sidebar-accent-foreground: 22 48% 28%;
+    --sidebar-border: 36 35% 82%;
+    --sidebar-ring: 122 45% 34%;
+  }
+
+  .dark {
+    --background: 22 30% 10%;
+    --foreground: 36 50% 95%;
+
+    --card: 22 25% 14%;
+    --card-foreground: 36 50% 95%;
+
+    --popover: 22 25% 14%;
+    --popover-foreground: 36 50% 95%;
+
+    --primary: 122 40% 45%;
+    --primary-foreground: 22 30% 10%;
+
+    --secondary: 22 20% 18%;
+    --secondary-foreground: 36 50% 95%;
+
+    --muted: 22 15% 20%;
+    --muted-foreground: 36 20% 60%;
+
+    --accent: 42 50% 45%;
+    --accent-foreground: 22 30% 10%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 50% 95%;
+
+    --border: 22 15% 22%;
+    --input: 22 15% 22%;
+    --ring: 122 40% 45%;
+
+    --karite: 36 40% 25%;
+    --karite-light: 36 30% 18%;
+    --earth: 36 45% 75%;
+    --earth-light: 36 30% 55%;
+    --brown: 22 35% 45%;
+    --leaf: 122 40% 45%;
+    --leaf-light: 122 35% 38%;
+    --gold: 42 50% 45%;
+    --gold-light: 42 45% 55%;
+    --cream: 22 25% 14%;
+    
+    --sidebar-background: 22 25% 12%;
+    --sidebar-foreground: 36 50% 95%;
+    --sidebar-primary: 122 40% 45%;
+    --sidebar-primary-foreground: 22 30% 10%;
+    --sidebar-accent: 22 15% 18%;
+    --sidebar-accent-foreground: 36 50% 95%;
+    --sidebar-border: 22 15% 22%;
+    --sidebar-ring: 122 40% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(var(--gold)) 0%, hsl(var(--brown)) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .text-gradient-premium {
+    background: var(--gradient-premium);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .bg-karite {
+    background-color: hsl(var(--karite));
+  }
+  
+  .bg-karite-light {
+    background-color: hsl(var(--karite-light));
+  }
+  
+  .bg-earth {
+    background-color: hsl(var(--earth));
+  }
+  
+  .bg-brown {
+    background-color: hsl(var(--brown));
+  }
+  
+  .bg-leaf {
+    background-color: hsl(var(--leaf));
+  }
+  
+  .bg-gold {
+    background-color: hsl(var(--gold));
+  }
+  
+  .bg-cream {
+    background-color: hsl(var(--cream));
+  }
+  
+  .text-earth {
+    color: hsl(var(--earth));
+  }
+  
+  .text-brown {
+    color: hsl(var(--brown));
+  }
+  
+  .text-leaf {
+    color: hsl(var(--leaf));
+  }
+  
+  .text-gold {
+    color: hsl(var(--gold));
+  }
+  
+  .text-earth-light {
+    color: hsl(var(--earth-light));
+  }
+  
+  .shadow-soft {
+    box-shadow: var(--shadow-soft);
+  }
+  
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+  
+  .shadow-hover {
+    box-shadow: var(--shadow-hover);
+  }
+  
+  .shadow-premium {
+    box-shadow: var(--shadow-premium);
+  }
+  
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+  
+  .gradient-accent {
+    background: var(--gradient-accent);
+  }
+  
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+  
+  .gradient-premium {
+    background: var(--gradient-premium);
+  }
+  
+  /* Premium button styles */
+  .btn-whatsapp {
+    @apply bg-leaf hover:bg-leaf-light text-primary-foreground font-semibold rounded-full shadow-card hover:shadow-hover transition-all duration-300;
+  }
+  
+  .btn-outline-premium {
+    @apply border-2 border-earth text-earth hover:bg-earth hover:text-cream font-semibold rounded-full transition-all duration-300;
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--karite-light));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--earth-light));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--earth));
+}
+
+/* Enhanced animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slideInLeft 0.8s ease-out forwards;
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scaleIn 0.6s ease-out forwards;
+}
+
+/* Enhanced hover effects */
+.hover-lift {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-lift:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Gradient text animations */
+.text-gradient-animate {
+  background: linear-gradient(270deg, hsl(var(--leaf)), hsl(var(--gold)), hsl(var(--leaf)));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradientShift 3s ease-in-out infinite;
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}

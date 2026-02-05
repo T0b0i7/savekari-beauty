@@ -1,0 +1,22 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="8" cy="8" r="8" fill="#F5E6D3"/>
+  
+  <!-- Karité nut shape -->
+  <path d="M8 2C5 2 3 4 3 7C3 9 4 11 5 12C6 13 7 14 8 14C9 14 10 13 11 12C12 11 13 9 13 7C13 4 11 2 8 2Z" fill="#8B4513" opacity="0.9"/>
+  
+  <!-- Leaf decoration -->
+  <path d="M6 5C6 5 7 4 8 4C9 4 10 5 10 5C10 6 9 7 8 7C7 7 6 6 6 5Z" fill="#228B22" opacity="0.8"/>
+  
+  <!-- S letter -->
+  <path d="M6.5 8C6.5 8 7 7.5 8 7.5C9 7.5 9.5 8 9.5 8.5C9.5 9 9 9.5 8 9.5C7 9.5 6.5 9 6.5 8.5" stroke="#FFD700" stroke-width="0.8" fill="none" stroke-linecap="round"/>
+  
+  <!-- è accent -->
+  <circle cx="8.5" cy="7" r="0.3" fill="#FFD700"/>
+  
+  <!-- V letter -->
+  <path d="M5.5 10L6.5 12L7.5 10" stroke="#FFD700" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- K letter -->
+  <path d="M8.5 10V12M8.5 11L9.5 10M8.5 11L9.5 12" stroke="#FFD700" stroke-width="0.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
