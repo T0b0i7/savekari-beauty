@@ -3,7 +3,20 @@
 🌿 **Soins naturels à base de beurre de karité béninois**  
 Une tradition familiale au service de votre beauté
 
-## 📖 Description
+## �️ Aperçu du Site
+
+### 📱 Version Mobile
+![Version Mobile](src/assets/img1.png)
+
+### 🖥️ Version Desktop  
+![Version Desktop](src/assets/img2.png)
+
+### 🛍️ Catalogue de Produits
+![Catalogue Produits](src/assets/img3.png)
+
+---
+
+## � Description
 
 Savèkari est une entreprise familiale béninoise spécialisée dans la fabrication de soins cosmétiques naturels à base de beurre de karité. Notre mission est de valoriser le trésor national du Bénin à travers des produits de qualité exceptionnelle.
 
@@ -120,6 +133,54 @@ src/
 - 📱 **Mobile First** : Optimisé pour mobile
 - 🖼️ **Images optimisées** : WebP + lazy loading
 - 🎯 **SEO Ready** : Meta tags et structure sémantique
+
+## 🌐 Noms d'Hébergement Suggérés
+
+### 🎯 Options Premium (Recommandées)
+- **savekari.com** ⭐ (Principal - court et professionnel)
+- **savèkari.com** (Avec accent - authentique)
+- **savekari-beauty.com** (Descriptif et SEO)
+- **karite-savekari.com** (Mots-clés forts)
+
+### 🌍 Options Locales
+- **savekari-bj.com** (Extension Bénin)
+- **savekari-benin.com** (Géolocalisation)
+- **beaute-savekari.com** (Francophone)
+
+### 💡 Alternatives Créatives
+- **savekari-nature.com** (Nature et bio)
+- **savekari-karite.com** (Produit phare)
+- **savekari-artisanal.com** (Savoir-faire)
+
+### 🚀 Plateformes d'Hébergement
+
+#### **Vercel** (Recommandé)
+```bash
+# Déploiement instantané
+vercel --prod
+# URL: savekari-beauty.vercel.app
+```
+
+#### **Netlify**
+```bash
+# Build et déploiement
+npm run build
+# URL: savekari-beauty.netlify.app
+```
+
+#### **GitHub Pages** (Gratuit)
+```bash
+# Configuration dans GitHub Settings
+# URL: T0b0i7.github.io/savekari-beauty
+```
+
+#### **Cloudflare Pages** (Performant)
+```bash
+# Build automatique depuis GitHub
+# URL personnalisée disponible
+```
+
+---
 
 ## 🌐 Déploiement
 
